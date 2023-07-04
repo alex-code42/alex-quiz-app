@@ -41,8 +41,8 @@ h3{
 }
 .icons{
     height: 40px;
-    background-color:#EEEEEE;
-    padding: 0px;
+    background-color: none !important;
+    padding: 5px;
     margin: 0px;
     
 }
@@ -73,6 +73,9 @@ h3{
     text-align: center;
     border: #183153 1px solid;
    
+}
+.space{
+    height: 100px;
 }
 
 .questions__question{
@@ -123,6 +126,10 @@ h3{
     color: #ffffff;
     font-size: small;
 }
+.live{
+    box-shadow: 10px 8px 10px 5px rgb(163, 163, 163);
+}
+
 
 /* Hier beginnt der Button
 } */
@@ -187,4 +194,23 @@ button {
      transform: scale(1);
     }
    }
-   
+/* Hier endet der Button und die about me sections startet
+} */
+
+.profile{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    gap: 50px;
+}
+
+
+.aboutme{
+    padding: 30px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
