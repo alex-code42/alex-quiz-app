@@ -1,0 +1,66 @@
+.profile{
+    margin: 25px;
+    display: flex;
+    margin-top: 60px;
+    align-items: center;
+    justify-content:flex-start;
+    gap: 15px;
+}
+.profile__name{
+    font-size:xx-large;
+}
+
+.profile__main{
+    background-color: #EEEEEE;
+}
+.profile__picture{
+    
+    height: 160px;
+    border-radius: 50%;
+    border: #183153 1px solid;
+}
+
+.aboutme{
+    padding: 30px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.counter{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    color: #EEEEEE;
+    
+}
+.counter__button{
+    width: 140px;
+    height: 50px;
+    color: #EEEEEE;
+}
+
+.settings{
+    width: 100%;
+    padding: 30px;
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.darkmode{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.darkmode__h2{
+    width: 150px;
+    font-weight: 400;
+}
+.darkmode__button{
+    width: 35%;
+    color: #EEEEEE;
+}

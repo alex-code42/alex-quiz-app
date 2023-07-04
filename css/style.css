@@ -1,0 +1,161 @@
+*{
+   
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+    font-size: large;
+    padding: 0;
+    margin: 0;
+    
+}
+
+.header{
+    background-color: #183153;
+    height: 100px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    border-radius: 10px;
+}
+h1{
+    color: aliceblue;
+    font-weight: bold;
+    font-size: xx-large;
+}
+h2{
+    font-weight: 600;
+    font-style: normal;
+}
+h3{
+    font-weight: 100;
+}
+
+.navi{
+    position: fixed;
+    bottom: 0;
+    height: 70px;
+    width: 100%;
+    background-color: #EEEEEE;
+    border-radius: 10px;
+    border: #183153 1px solid;
+    z-index: 1111;
+    
+}
+.icons{
+    height: 40px;
+    background-color: none !important;
+    padding: 5px;
+    margin: 0px; 
+}
+
+
+.circle{
+    color: #EEEEEE;
+}
+
+.nav__list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    
+
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.questions{
+    width: 90%;
+    height: 300px;
+    background-color: #EEEEEE;
+    margin: 10%;
+    border-radius: 10px;
+    position: relative;
+    align-items: center;
+    text-align: center;
+    border: #183153 1px solid;
+   
+}
+.space{
+    height: 100px;
+}
+
+.questions__question{
+    margin-top: 4%;
+    text-align: center;  
+    padding: 5%;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+/* .buttons button{
+    margin: 0 auto;
+} */
+
+.button__show{
+    padding-top: 13px;
+}
+
+.questions__answer{
+    position: relative;
+    margin-top: 30px;
+    text-align: center;
+}
+.questions__bookmark{
+    position: absolute;
+    top: -12px;
+    right: 10px;
+    width: 30px;
+}
+.questions__tags{
+    position: absolute;
+    left: 8px;
+    bottom: 10px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 5px;
+}
+
+.tag{
+    width: 80px;
+    border-radius: 10px;
+    background-color: #183153;
+    list-style-type: none; 
+    text-align: center;
+    color: #ffffff;
+    font-size: small;
+}
+.live{
+    box-shadow: 10px 8px 10px 5px rgb(163, 163, 163);
+}
+
+
+
+@media only screen and (min-width: 900px) {
+    body {
+      background-color: #183153;
+    }
+
+    .questions{
+        height: 500px;
+    }
+
+    .header{
+        background-color: #EEEEEE;
+    }
+    h1{
+        color: #183153;
+    }
+
+  }
+
+
+
+
+
