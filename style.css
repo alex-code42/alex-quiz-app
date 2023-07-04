@@ -268,7 +268,23 @@ button {
     width: 35%;
     color: #EEEEEE;
 }
+@media only screen and (min-width: 900px) {
+    body {
+      background-color: #183153;
+    }
 
+    .questions{
+        height: 500px;
+    }
+
+    .header{
+        background-color: #EEEEEE;
+    }
+    h1{
+        color: #183153;
+    }
+
+  }
 
 
 
