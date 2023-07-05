@@ -1,7 +1,4 @@
-:root {
-    --primary-color: #183153;
-    --secondary-color: #EEEEEE;
-  }
+@import url(./root.css);
 
 .profile{
     margin: 25px;
@@ -15,9 +12,7 @@
     font-size:xx-large;
 }
 
-.profile__main{
-    background-color: var(--secondary-color);
-}
+
 .profile__picture{
     
     height: 160px;

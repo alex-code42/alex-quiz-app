@@ -1,7 +1,4 @@
-:root {
-    --primary-color: #3f0097;
-    --secondary-color: #38CCDA;
-  }
+@import url(./root.css);
 
 button {
     position: relative;

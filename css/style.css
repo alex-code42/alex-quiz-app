@@ -1,8 +1,4 @@
-:root {
-    --primary-color: #ee0606;
-    --secondary-color: #0d00ff;
-    --third-color: #ff4747;
-  }
+@import url(./root.css);
 
 *{
    
@@ -14,9 +10,6 @@
     
 }
 
-.body{
-    background-color: var(--third-color);
-}
 
 .header{
     background-color:var(--primary-color);
