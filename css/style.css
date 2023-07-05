@@ -161,7 +161,11 @@ h3{
   }
 
 
-  /*  hover-over-button*/
+  /*  switch button*/
+
+  .switch{
+    margin-left: 80px;
+  }
 
   a {
     overflow: hidden;
