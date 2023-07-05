@@ -1,6 +1,7 @@
 :root {
-    --primary-color: #183153;
-    --secondary-color: #EEEEEE;
+    --primary-color: #ee0606;
+    --secondary-color: #0d00ff;
+    --third-color: #ff4747;
   }
 
 *{
@@ -11,6 +12,10 @@
     padding: 0;
     margin: 0;
     
+}
+
+.body{
+    background-color: var(--third-color);
 }
 
 .header{
