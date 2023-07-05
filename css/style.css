@@ -1,3 +1,8 @@
+:root {
+    --primary-color: #183153;
+    --secondary-color: #EEEEEE;
+  }
+
 *{
    
     font-family:Verdana, Geneva, Tahoma, sans-serif;
@@ -9,7 +14,7 @@
 }
 
 .header{
-    background-color: #183153;
+    background-color:var(--primary-color);
     height: 100px;
     display: flex;
     align-items:center;
@@ -34,7 +39,7 @@ h3{
     bottom: 0;
     height: 70px;
     width: 100%;
-    background-color: #EEEEEE;
+    background-color: var(--secondary-color);
     border-radius: 10px 10px 0px 0px;
     border: #183153 1px solid;
     z-index: 1111;
@@ -49,7 +54,7 @@ h3{
 
 
 .circle{
-    color: #EEEEEE;
+    color: var(--secondary-color);
 }
 
 .nav__list{
@@ -70,13 +75,13 @@ h3{
 .questions{
     width: 90%;
     height: 300px;
-    background-color: #EEEEEE;
+    background-color: var(--secondary-color);
     margin: 10%;
     border-radius: 10px;
     position: relative;
     align-items: center;
     text-align: center;
-    border: #183153 1px solid;
+    border: var(--primary-color) 1px solid;
    
 }
 .space{
@@ -125,21 +130,21 @@ h3{
 .tag{
     padding: 5px;
     border-radius: 4px;
-    background-color: #183153;
+    background-color: var(--primary-color);
     list-style-type: none; 
     text-align: center;
     color: #ffffff;
     font-size: small;
 }
 .live{
-    box-shadow: 10px 8px 10px 5px rgb(163, 163, 163);
+    box-shadow: 10px 8px 5px 2px var(--primary-color);
 }
 
 
 
 @media only screen and (min-width: 900px) {
     body {
-      background-color: #183153;
+      background-color: var(--primary-color);
     }
 
     .questions{
@@ -150,9 +155,60 @@ h3{
         background-color: #EEEEEE;
     }
     h1{
-        color: #183153;
+        color: var(--primary-color);
     }
 
+  }
+
+
+  /*  hover-over-button*/
+
+  a {
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+  }
+  
+  a::before,
+  a::after {
+   content: '';
+    position: absolute;
+    width: 100%;
+    left: 0;
+  }
+  a::before {
+    background-color: var(--primary-color);
+    height: 4px;
+    bottom: 0;
+    transform-origin: 100% 50%;
+    transform: scaleX(0);
+    transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+  }
+  a::after {
+    content: attr(data-replace);
+    height: 100%;
+    top: 0;
+    transform-origin: 100% 50%;
+    transform: translate3d(200%, 0, 0);
+    transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+    color: #d67254;
+  }
+  
+  a:hover::before {
+    transform-origin: 0% 50%;
+    transform: scaleX(1);
+  }
+  a:hover::after {
+    transform: translate3d(0, 0, 0);
+  }
+  
+  a span {
+    display: inline-block;
+    transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+  }
+  
+  a:hover span {
+    transform: translate3d(-200%, 0, 0);
   }
 
 
