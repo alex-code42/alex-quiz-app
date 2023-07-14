@@ -10,53 +10,66 @@
 </head>
 <body>
     <header class="header">
-        <h1>Bookmark</h1>
+        <h1>Quiz App</h1>
     </header>
     
     <main class="main">
         <section class="questions">
-            <h2 class="questions__question" >What does CSS stand for?</h2>
-            <div class="questions__buttons">
+            <h2 class="questions__question" >What property flips the axes in flexbox?</h2>
                 <button>
-                    <span class="show">Show Answer</span>
+                    <span class="questions__buttons">Show Answer</span>
                 </button>
-            </div>
-            <p class="questions__answer">Cascading Style Sheets</p>
-            <img class="questions__bookmark" src="./image/bookmark_filled.png" alt="bookmark">
+            <p class="questions__answer">Flex direction</p>
+            <img class="questions__bookmark" src="./image/bookmark.png" alt="bookmark">
             <ul class="questions__tags">
-                    <li class="tag">#html</li>
-                    <li class="tag">#flexbox</li>
-                    <li class="tag">#css</li>
-                </ul>
+                <li class="questions__tags__tag">#align</li>
+                <li class="questions__tags__tag">#flexbox</li>
+                <li class="questions__tags__tag">#css</li>
+            </ul>
         </section>
 
         <section class="questions">
-            <h2 class="questions__question" >Which HTML tag is used to define an internal style sheet?</h2>
+            <h2 class="questions__question" >Which HTML attribute is used to define inline styles?</h2>
             <div class="questions__buttons">
-                <button>
-                    <span class="show">Show Answer</span>
-                </button>
+            <button>
+                <span class="show">Show Answer</span>
+            </button>
             </div>
             <p class="questions__answer">style</p>
             <img class="questions__bookmark" src="./image/bookmark_filled.png" alt="bookmark">
             <ul class="questions__tags">
-                    <li class="tag">#html</li>
+                <li class="tag">#html</li>
+                <li class="tag">#attribute</li>
+                <li class="tag">#css</li>
+            </ul>
+        </section>
+
+        <section class="questions">
+            <h2 class="questions__question" >How can you justify the content in the center?</h2>
+            <div class="questions__buttons">
+            <button>
+                <span class="show">Show Answer</span>
+            </button>
+            </div>
+            <p class="questions__answer">justify-content: center</p>
+            <img class="questions__bookmark" src="./image/bookmark.png" alt="bookmark">
+            <ul class="questions__tags">
+                    <li class="tag">#center</li>
                     <li class="tag">#flexbox</li>
                     <li class="tag">#css</li>
                 </ul>
         </section>
-
         <section class="questions">
-            <h2 class="questions__question" >What property flips the axes in flexbox?</h2>
+            <h2 class="questions__question" >Special Questions</h2>
             <div class="questions__buttons">
                 <button>
                     <span class="show">Show Answer</span>
                 </button>
             </div>
-            <p class="questions__answer">Flex direction</p>
-            <img class="questions__bookmark" src="./image/bookmark_filled.png" alt="bookmark">
+            <p class="questions__answer">justify-content: center</p>
+            <img class="questions__bookmark" src="./image/bookmark.png" alt="bookmark">
             <ul class="questions__tags">
-                    <li class="tag">#html</li>
+                    <li class="tag">#center</li>
                     <li class="tag">#flexbox</li>
                     <li class="tag">#css</li>
                 </ul>
@@ -64,10 +77,10 @@
         <div class="space"> </div>
 
     </main>
-    <nav class="navi nav__list">
-            <a href="./index.html"><img class="icons" src="./image/home.png" alt="home"></a>
-            <a href="./bookmark.html"><img class="icons live" src="./image/bookmark_filled.png" alt="bookmark"></a>
-            <a href="./profile-page.html"><img class="icons" src="./image/profile.png" alt="profile"></a>
+    <nav class="navi navbar">
+            <a class="navi__box" href="./index.html"><img class="icons live" src="./image/home_filled.png" alt="home"></a>
+            <a class="navi__box" href="./bookmark.html"><img class="icons" src="./image/bookmark_transparent.png" alt="bookmark"></a>
+            <a class="navi__box" href="./profile-page.html"><img class="icons" src="./image/profile.png" alt="profile"></a>   
     </nav>
     
 </body>

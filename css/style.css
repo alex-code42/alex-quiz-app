@@ -55,7 +55,7 @@ h3{
     color: var(--secondary-color);
 }
 
-.nav__list{
+.navbar{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -125,7 +125,7 @@ h3{
     gap: 5px;
 }
 
-.tag{
+.questions__tags__tag{
     padding: 5px;
     border-radius: 4px;
     background-color: var(--primary-color);
