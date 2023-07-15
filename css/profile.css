@@ -17,7 +17,13 @@
     
     height: 160px;
     border-radius: 50%;
+    box-sizing: border-box;
     border: var(--primary-color) 1px solid;
+    transition: border 0.4s ease-in-out;
+}
+.profile__picture:hover{
+  border: var(--secondary-color) 4px solid;
+  box-sizing: border-box;
 }
 
 .aboutme{

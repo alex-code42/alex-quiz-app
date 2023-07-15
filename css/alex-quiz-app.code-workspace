@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../../../Downloads/css-animations"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "css-animations"
+	}
+}

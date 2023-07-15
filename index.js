@@ -6,6 +6,7 @@ const answer = document.querySelector('[data-js="question_answer"]');
 const bookmark = document.querySelector('[data-js="bookmark"]');
 
 
+console.log(button)
 
 
 
@@ -46,5 +47,8 @@ function changeButtonText(){
 }
 
   answer.style.display = "none"
+
+
+  
 
 

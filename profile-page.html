@@ -8,8 +8,11 @@
     <link rel="stylesheet" href="css/button.css">
     <link rel="stylesheet" href="css/profile.css">
     
+
+    <script src="./profile.js" defer></script>
+    
 </head>
-<body class="profile__main">
+<body class="profile__main dark-theme || light-theme">
     <header class="header">
         <h1>Profile Page</h1>
     </header>
@@ -34,7 +37,7 @@
             <section class="darkmode">
                 <h2 class="darkmode__h2">Dark Mode</h2>
                 <label class="switch">
-                    <input type="checkbox" checked>
+                    <input type="checkbox"data-js="darkmode" unchecked>
                     <span class="slider round"></span>
                 </label>
             </section>
