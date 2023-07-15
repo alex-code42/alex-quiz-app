@@ -105,10 +105,11 @@ h3{
     padding-top: 13px;
 }
 
-.questions__answer{
+.questions__hidden{
     position: relative;
-    margin-top: 30px;
+    margin-top: 20px;
     text-align: center;
+    font-size: 23px;
 }
 .questions__bookmark{
     position: absolute;
@@ -136,6 +137,10 @@ h3{
 }
 .live{
     box-shadow: 10px 8px 5px 2px var(--primary-color);
+}
+
+.togglebookmark{
+    content: url(../image/bookmark_filled.png);
 }
 
 
@@ -213,7 +218,40 @@ h3{
     transform: translate3d(-200%, 0, 0);
   }
 
+.addquestions{
 
+    width: 90%;
+    height: 400px;
+    background-color: var(--secondary-color);
+    margin: 10%;
+    padding-top:0px;
+    border-radius: 10px;
+    position: relative;
+    align-items: center;
+    text-align: center;
+    border: var(--primary-color) 1px solid;
+    color: #EEEEEE;
+}
 
+.inputfield{
+width: 300px;
+height: 100px;
+}
+.fieldset1{
+    background-color: var(--primary-color);
+    
+    padding-top: 0px;
+    border: var(--primary-color) 1px solid;
+    margin: 25px;
+    border-radius: 10px;
+    height: 300px;
+    position: relative;
+}
+.addquestion_personal{
 
-
+    
+    padding-top: 40px;
+}
+.textinfield{
+    padding: px;
+}

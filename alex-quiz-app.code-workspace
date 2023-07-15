@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../challenges/challengeoftheday13.07/afternoon/js-forms-2_controlled-input-uppercase"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "alex-quiz-app"
+	}
+}
