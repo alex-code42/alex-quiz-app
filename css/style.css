@@ -81,8 +81,15 @@ h3{
     align-items: center;
     text-align: center;
     border: var(--primary-color) 1px solid;
+    transition: box-shadow 0.3s ease-in-out;
+    
    
 }
+.questions:hover{
+
+    box-shadow: 3px 4px 3px 2px var(--primary-color);
+}
+
 .space{
     height: 100px;
 }
@@ -110,8 +117,10 @@ h3{
     position: relative;
     margin-top: 20px;
     text-align: center;
-    font-size: 23px;
+    font-size: 15px;
+    transition: 0.3s ease-in-out,color 0.3s ease-in-out;
 }
+
 .questions__bookmark{
     position: absolute;
     top: -12px;
@@ -273,3 +282,30 @@ height: 100px;
     background-color: #183153;
     color: #EEEEEE;
 }
+
+button{
+    background-color: transparent;
+    margin-top: 20px;
+    width: 150px;
+    border: none; 
+}
+
+
+
+.questions__buttons{
+    background-color: #183153;
+    padding: 10px;
+    color: #EEEEEE;
+    border-radius: 10px;
+    border: var(--secondary-color) 1px solid;
+    transition: background-color 0.3s ease-in-out,color 0.3s ease-in-out;
+    transition: box-shadow 0.3s ease-in-out;
+}
+.questions__buttons:hover{
+
+    box-shadow: 3px 4px 3px 2px var(--primary-color);
+}
+.questions__buttons:active {
+    transform: scale(0.9);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  }
