@@ -7,6 +7,7 @@
     font-size: large;
     padding: 0;
     margin: 0;
+    transition: background-color 0.2s ease-in 0.1s;
     
 }
 
@@ -55,7 +56,7 @@ h3{
     color: var(--secondary-color);
 }
 
-.nav__list{
+.navbar{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -105,10 +106,11 @@ h3{
     padding-top: 13px;
 }
 
-.questions__answer{
+.questions__hidden{
     position: relative;
-    margin-top: 30px;
+    margin-top: 20px;
     text-align: center;
+    font-size: 23px;
 }
 .questions__bookmark{
     position: absolute;
@@ -125,7 +127,7 @@ h3{
     gap: 5px;
 }
 
-.tag{
+.questions__tags__tag{
     padding: 5px;
     border-radius: 4px;
     background-color: var(--primary-color);
@@ -133,9 +135,21 @@ h3{
     text-align: center;
     color: #ffffff;
     font-size: small;
+    transition: background-color 0.3s ease-in-out,color 0.3s ease-in-out;
+    transition: box-shadow 0.3s ease-in-out;
 }
+.questions__tags__tag:hover{
+    background-color: var(--secondary-color);
+    color: #181818;
+    box-shadow: 3px 4px 3px 2px var(--primary-color);
+}
+
 .live{
-    box-shadow: 10px 8px 5px 2px var(--primary-color);
+    box-shadow: 2px 2px 2px 2px var(--primary-color);
+}
+
+.togglebookmark{
+    content: url(../image/bookmark_filled.png);
 }
 
 
@@ -213,7 +227,49 @@ h3{
     transform: translate3d(-200%, 0, 0);
   }
 
+.addquestions{
 
+    width: 90%;
+    height: 400px;
+    background-color: var(--secondary-color);
+    margin: 10%;
+    padding-top:0px;
+    border-radius: 10px;
+    position: relative;
+    align-items: center;
+    text-align: center;
+    border: var(--primary-color) 1px solid;
+    color: #EEEEEE;
+}
 
+.inputfield{
+width: 300px;
+height: 100px;
+}
+.fieldset1{
+    background-color: var(--primary-color);
+    
+    padding-top: 0px;
+    border: var(--primary-color) 1px solid;
+    margin: 25px;
+    border-radius: 10px;
+    height: 300px;
+    position: relative;
+}
+.addquestion_personal{
 
+    
+    padding-top: 40px;
+}
+.textinfield{
+    padding: px;
+}
 
+.label{
+    padding: 10px;
+}
+
+.dark-theme{
+    background-color: #183153;
+    color: #EEEEEE;
+}

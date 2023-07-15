@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>>>, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/button.css">
+    <script src="./addquestions.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <h1>Add your Questions</h1>
+    </header>
+    
+    <main class="main">
+        <section class="addquestions">
+            <form data-js="form">
+            <fieldset class="fieldset1">
+                <legend class="addquestion_personal"></legend>
+                <label class="label textinfield" for="questions">Questions</label><br>
+                <input
+                type="text"
+                class="textinfield"
+                name="question"
+                data-js="addquestion"
+                id="textinfield"
+                placeholder="Your questions"
+                ><br>
+        
+                <label class="label answer" for="answer">Answer</label><br>
+                <input  
+                    type="text"
+                    name="answer"
+                    class="inputfield"
+                    data-js="addanswer"
+                    id="answer"
+                    placeholder="Your Answer" 
+                    >
+                </input><br>
+            <label class="label textinfield" for="addingtags">Add Tags</label><br>
+            <input
+                type="text"
+                class="textinfield"
+                name="tags"
+                data-js="addtags"
+                id="addingtags"
+                placeholder="Your questions"
+            ><br>
+
+                </fieldset>
+        
+                <button data-js="buttonaddingquestions">
+                    <span data-js="button_text2"class="questions__buttons">Create Question</span>
+                </button>
+              </form>
+        </section>
+        <section data-js="listOfQuestions" class="question_container">
+            
+            
+         </section>
+
+ 
+        <div class="space"> </div>
+
+    </main>
+    <div class="space"> </div>
+    <nav class="navi navbar">
+            <a class="navi__box" href="./index.html"><img class="icons" src="./image/home.png" alt="home"></a>
+            <a class="navi__box" href="./bookmark.html"><img class="icons" src="./image/bookmark_transparent.png" alt="bookmark"></a>
+            <a class="navi__box" href="./addquestions.html"><img class="icons live" src="./image/file-plus-fill.svg" alt="questions"></a>  
+            <a class="navi__box" href="./profile-page.html"><img class="icons" src="./image/profile.png" alt="profile"></a>  
+    </nav>
+    
+</body>
+</html>
