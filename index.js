@@ -48,6 +48,34 @@ function changeButtonText(){
     }
 }
 
+// Get all square elements
+const squares = document.querySelectorAll('.square');
+
+// Remove the transition class from all square elements
+squares.forEach(square => {
+  square.classList.remove('square-transition');
+});
+
+// Create the observer, same as before:
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    const square = entry.target.querySelector('.square');
+
+    if (entry.isIntersecting) {
+      square.classList.add('square-transition');
+    } else {
+      square.classList.remove('square-transition');
+    }
+  });
+});
+
+// Observe each square-wrapper element
+const squareWrappers = document.querySelectorAll('.square-wrapper');
+squareWrappers.forEach(wrapper => {
+  observer.observe(wrapper);
+});
+
+
 
 
 

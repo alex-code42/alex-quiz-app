@@ -14,47 +14,49 @@
     </header>
     
     <main class="main">
-        <section class="addquestions">
-            <form data-js="form">
-            <fieldset class="fieldset1">
-                <legend class="addquestion_personal"></legend>
-                <label class="label textinfield" for="questions">Questions</label><br>
-                <input
-                type="text"
-                class="textinfield"
-                name="question"
-                data-js="addquestion"
-                id="textinfield"
-                placeholder="Your questions"
-                ><br>
-        
-                <label class="label answer" for="answer">Answer</label><br>
-                <input  
+        <div class="square-wrapper">
+            <section class="addquestions square square-transition">
+                <form data-js="form">
+                <fieldset class="fieldset1">
+                    <legend class="addquestion_personal"></legend>
+                    <label class="label textinfield" for="questions">Questions</label><br>
+                    <input
                     type="text"
-                    name="answer"
-                    class="inputfield"
-                    data-js="addanswer"
-                    id="answer"
-                    placeholder="Your Answer" 
-                    >
-                </input><br>
-            <label class="label textinfield" for="addingtags">Add Tags</label><br>
-            <input
-                type="text"
-                class="textinfield"
-                name="tags"
-                data-js="addtags"
-                id="addingtags"
-                placeholder="Your questions"
-            ><br>
+                    class="textinfield"
+                    name="question"
+                    data-js="addquestion"
+                    id="textinfield"
+                    placeholder="Your questions"
+                    ><br>
+            
+                    <label class="label answer" for="answer">Answer</label><br>
+                    <input  
+                        type="text"
+                        name="answer"
+                        class="inputfield"
+                        data-js="addanswer"
+                        id="answer"
+                        placeholder="Your Answer" 
+                        >
+                    </input><br>
+                <label class="label textinfield" for="addingtags">Add Tags</label><br>
+                <input
+                    type="text"
+                    class="textinfield"
+                    name="tags"
+                    data-js="addtags"
+                    id="addingtags"
+                    placeholder="Your questions"
+                ><br>
 
-                </fieldset>
-        
-                <button data-js="buttonaddingquestions">
-                    <span data-js="button_text2"class="questions__buttons">Create Question</span>
-                </button>
-              </form>
-        </section>
+                    </fieldset>
+            
+                    <button data-js="buttonaddingquestions">
+                        <span data-js="button_text2"class="questions__buttons">Create Question</span>
+                    </button>
+                </form>
+            </section>
+        </div>
         <section data-js="listOfQuestions" class="question_container">
             
             
