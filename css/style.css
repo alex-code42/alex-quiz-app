@@ -268,8 +268,9 @@ height: 100px;
     border: var(--primary-color) 1px solid;
     margin: 25px;
     border-radius: 10px;
-    height: 300px;
+    height: 320px;
     position: relative;
+    margin-top: 10px;
 }
 .addquestion_personal{
 
@@ -333,4 +334,27 @@ top: 10px;
 opacity: 0.9;
 transition: top 0.3s ease-in-out;
 
+}
+.square-wrapper{
+    width: 100%;
+}
+.square {
+    width: 90%;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px;
+    opacity: 0;
+    transform: scale(1.2);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .square {
+    transition: opacity 1.5s ease, transform 1.5s ease;
+  }
+}
+
+.square-transition {
+    opacity: 1;
+    transform: none;
 }
