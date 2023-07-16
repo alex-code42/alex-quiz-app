@@ -127,6 +127,12 @@ h3{
     right: 10px;
     width: 30px;
 }
+
+.questions__bookmark:hover{
+    transform: scale(1.1);
+    
+}
+
 .questions__tags{
     position: absolute;
     left: 12px;
@@ -302,10 +308,29 @@ button{
     transition: box-shadow 0.3s ease-in-out;
 }
 .questions__buttons:hover{
-
+    
     box-shadow: 3px 4px 3px 2px var(--primary-color);
 }
 .questions__buttons:active {
-    transform: scale(0.9);
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-  }
+transform: scale(0.9);
+box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.position--0 {
+top: -34px;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-weight: 900;
+transition: top 0.3s ease-in-out;
+color: #183153;
+
+opacity: 0.05;
+
+}
+
+.position--1 {
+top: 10px;
+
+opacity: 0.9;
+transition: top 0.3s ease-in-out;
+
+}

@@ -18,6 +18,7 @@ button.addEventListener("click", (event) =>{
    
         showAnswer()
         changeButtonText()
+        changePosition()
         
 
   })
@@ -29,12 +30,13 @@ button.addEventListener("click", (event) =>{
 })
 
   function showAnswer(){
-    if (answer.style.display === "none"){
-        answer.style.display = "block"
-    }
-    else {
-        answer.style.display = "none"
-    }
+    answer.classList.toggle("position--1");
+    // if (answer.style.display === "none"){
+    //     answer.style.display = "block"
+    // }
+    // else {
+    //     answer.style.display = "none"
+    // }
 }
 
 function changeButtonText(){
@@ -46,9 +48,9 @@ function changeButtonText(){
     }
 }
 
-  answer.style.display = "none"
 
 
-  
+
+
 
 
