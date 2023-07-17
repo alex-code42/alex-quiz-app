@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=>>>, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/button.css">
     <script src="./addquestions.js" defer></script>
 </head>
 <body>
@@ -27,7 +26,7 @@
                     data-js="addquestion"
                     id="textinfield"
                     placeholder="Your questions"
-                    ><br>
+                    ><br><p data-js="charactersleft" class="form__characters__left">You have 90 Characters left</p>
             
                     <label class="label answer" for="answer">Answer</label><br>
                     <input  
@@ -38,7 +37,7 @@
                         id="answer"
                         placeholder="Your Answer" 
                         >
-                    </input><br>
+                    </input><br><p data-js="answersleft">You have 120 Characters left</p>
                 <label class="label textinfield" for="addingtags">Add Tags</label><br>
                 <input
                     type="text"
