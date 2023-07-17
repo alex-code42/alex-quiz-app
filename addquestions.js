@@ -1,11 +1,17 @@
 console.clear();
 const form= document.querySelector('[data-js="form"]');
+const addQuestion= document.querySelector('[data-js="addquestion"]');
+const addAnswer = document.querySelector('[data-js="addanswer"]');
 const listOfQuestions = document.querySelector('[data-js="listOfQuestions"]');
 const main = document.querySelector("main");
+const charsLeftOfQuestion = document.querySelector('[data-js="charactersleft"]');
+const charsLeftOfAnswer = document.querySelector('[data-js="answersleft"]');
 
+console.log(charsLeftOfQuestion)
 
 
 console.log(listOfQuestions)
+console.log(addAnswer)
 
 
 form.addEventListener("submit", (event) => {
@@ -25,12 +31,17 @@ form.addEventListener("submit", (event) => {
   })
 
 
-  function createElements(question, ans, tags){
+function createElements(question, ans, tags){
 
+//Create Div
+let div = document.createElement("div");
+div.setAttribute("class", "square-wrapper");
 
 // Create Section
 let section = document.createElement("section");
 section.setAttribute("class", "questions");
+section.classList.add("class", "square");
+section.classList.add("class", "square-transition");
 
 // Create h2 elements
 let h2 = document.createElement("h2");
@@ -68,14 +79,15 @@ let li = document.createElement("li");
 li.setAttribute("class", "questions__tags__tag");
 li.innerHTML = "#"+ tags;
 
-// Append Tags to Section and Section to Main
+// Append Tags to Section and Section to Main to Div 
 section.append(h2);
 section.append(button);
 section.append(p);
 section.append(img);
 section.append(ul);
 ul.append(li);
-main.append(section);
+div.append(section)
+main.append(div);
 
 
 const buttontext = document.querySelector('[data-js="button_text"]');
@@ -88,10 +100,7 @@ changeButtonText()
 
 })
 
-bookmark.addEventListener("click", (event) =>{
-bookmark.classList.toggle("togglebookmark");
 
-})
 
 function showAnswer(){
 if (answer.style.display === "none"){
@@ -113,24 +122,59 @@ else{
 
 answer.style.display = "none"
 
-
 };
 
-const square = document.querySelector('.square');
-square.classList.remove('square-transition');
+addQuestion.addEventListener("input", (event) => {
+  
+  console.log("hallo")
+  console.log(addQuestion.value.length)
+
+  let charactersTyped = addQuestion.value.length 
+
+  let charsLeft = 90 - charactersTyped
+  console.log(charsLeft)
+  charsLeftOfQuestion.innerHTML = `You have ${charsLeft} Characters left`
+  
+})
+
+addAnswer.addEventListener("input", (event) => {
+  
+  console.log("hallo")
+  console.log(addAnswer.value.length)
+
+  let charactersTyped = addAnswer.value.length 
+
+  let charsLeft = 120 - charactersTyped
+  console.log(charsLeft)
+  charsLeftOfAnswer.innerHTML = `You have ${charsLeft} Characters left`
+  
+})
+
+
+
+// Get all square elements
+const squares = document.querySelectorAll('.square');
+
+// Remove the transition class from all square elements
+squares.forEach(square => {
+  square.classList.remove('square-transition');
+});
 
 // Create the observer, same as before:
 const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
+    const square = entry.target.querySelector('.square');
+
     if (entry.isIntersecting) {
       square.classList.add('square-transition');
-      return;
+    } else {
+      square.classList.remove('square-transition');
     }
-
-    square.classList.remove('square-transition');
   });
 });
 
-observer.observe(document.querySelector('.square-wrapper'));
-
-
+// Observe each square-wrapper element
+const squareWrappers = document.querySelectorAll('.square-wrapper');
+squareWrappers.forEach(wrapper => {
+  observer.observe(wrapper);
+});
